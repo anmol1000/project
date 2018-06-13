@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="projects" />
+        <module name="postorder-processor" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="postorder-processor" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
