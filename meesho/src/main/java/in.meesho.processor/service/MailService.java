@@ -13,4 +13,8 @@ public class MailService {
         //send email attached;
     }
 
+    public void pushToMailServiceQueue(String invoiceFileUrl, String orderId){
+        //push to mail service queue
+    }
+
 }

@@ -18,11 +18,11 @@ public class InvoiceOrderMapperObject {
         this.sendSms = sendSms;
     }
 
-    public Boolean getSendEmai() {
+    public Boolean getSendEmail() {
         return sendEmail;
     }
 
-    public void setSendEmai(Boolean sendEmail) {
+    public void setSendEmail(Boolean sendEmail) {
         this.sendEmail = sendEmail;
     }
 
