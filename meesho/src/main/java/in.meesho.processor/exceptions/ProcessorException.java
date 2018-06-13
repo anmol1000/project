@@ -1,5 +1,7 @@
 package in.meesho.processor.exceptions;
 
+import in.meesho.processor.error.ErrorCode;
+
 public class ProcessorException extends Exception {
 
     private static final int STATUS_CODE = 500;
@@ -9,7 +11,7 @@ public class ProcessorException extends Exception {
     protected String extraInfo;
     protected Integer statusCode;
 
-    public AdminException() {
+    public ProcessorException() {
         super();
     }
 

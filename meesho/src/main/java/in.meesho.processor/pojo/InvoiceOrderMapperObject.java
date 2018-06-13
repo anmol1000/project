@@ -3,10 +3,28 @@ package in.meesho.processor.pojo;
 import in.meesho.processor.enums.InvoiceServiceStates;
 
 public class InvoiceOrderMapperObject {
+    private Boolean sendSms;
+    private Boolean sendEmail;
     private String invoiceId;
     private String orderId;
-    private long createdTs;
+    private Long createdTs;
     private InvoiceServiceStates state;
+
+    public Boolean getSendSms() {
+        return sendSms;
+    }
+
+    public void setSendSms(Boolean sendSms) {
+        this.sendSms = sendSms;
+    }
+
+    public Boolean getSendEmai() {
+        return sendEmail;
+    }
+
+    public void setSendEmai(Boolean sendEmail) {
+        this.sendEmail = sendEmail;
+    }
 
     public String getInvoiceId() {
         return invoiceId;
@@ -24,11 +42,11 @@ public class InvoiceOrderMapperObject {
         this.orderId = orderId;
     }
 
-    public long getCreatedTs() {
+    public Long getCreatedTs() {
         return createdTs;
     }
 
-    public void setCreatedTs(long createdTs) {
+    public void setCreatedTs(Long createdTs) {
         this.createdTs = createdTs;
     }
 
