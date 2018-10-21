@@ -7,5 +7,16 @@ const User = new Schema({
     name:String,
     contactNumber:Number,
     fathersName:String,
-    address:String
-})
+    address:String,
+    designation: {
+        type: String,
+        enum : ['STUDENT','TEACHER'],
+        default: 'NEW'
+    },
+    isAdmin:{
+        type:Boolean,
+        default: false
+    }
+});
+
+module.exports = User;
