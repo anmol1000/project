@@ -2,7 +2,7 @@ const db = require('../utils/mongo-client');
 const Schema = db.Schema;
 const ObjectId = Schema.ObjectId;
 
-const User = new Schema({
+const User =  db.model('User',new Schema({
     userId:ObjectId,
     name:String,
     contactNumber:Number,
@@ -11,12 +11,12 @@ const User = new Schema({
     designation: {
         type: String,
         enum : ['STUDENT','TEACHER'],
-        default: 'NEW'
+        default: 'STUDENT'
     },
     isAdmin:{
         type:Boolean,
         default: false
     }
-});
+}));
 
 module.exports = User;
