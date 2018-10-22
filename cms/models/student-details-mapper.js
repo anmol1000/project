@@ -23,7 +23,7 @@ const studentMapperSchema = new Schema({
         type:Boolean,
         default:false
     }
-});
+},{timestamps: true});
 
 studentMapperSchema.index({
     user:1,

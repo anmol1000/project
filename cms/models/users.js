@@ -5,8 +5,8 @@ const ObjectId = Schema.ObjectId;
 const User =  db.model('User',new Schema({
     userId:ObjectId,
     name:String,
+    email:String,
     contactNumber:Number,
-    fathersName:String,
     address:String,
     designation: {
         type: String,
@@ -17,6 +17,6 @@ const User =  db.model('User',new Schema({
         type:Boolean,
         default: false
     }
-}));
+},{timestamps: true}));
 
 module.exports = User;

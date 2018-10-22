@@ -1,21 +1,14 @@
 var express = require('express');
 var router = express.Router();
-
-var pojo = function () {
-    var members = arguments;
-
-    return function () {
-        var obj = {}, i = 0, j = members.length;
-        for (; i < j; ++i) {
-            obj[members[i]] = arguments[i];
-        }
-
-        return obj;
-    };
-};
+const {OAuth2Client} = require('google-auth-library');
+const client = new OAuth2Client(config['CLIENT_ID']);
 
 router.post('/login', function(req, res, next) {
-
+    var googleToken = req.header('X-Auth-Token');
+    var email = req.email;
+    //verify if email is present
+    //verify google token
+    //create session
 });
 
 router.post('/logout', function(req, res, next){

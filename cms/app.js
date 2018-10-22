@@ -22,6 +22,7 @@ global.FileUtils = require("./utils/file-utils");
  routes
  */
 var article = require('./routes/article');
+var users = require('./routes/users');
 
 var app = express();
 var cmsApp = express();
@@ -37,17 +38,12 @@ app.use(logger('common'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(__dirname + "/public/app"));
-
-if (!fs.existsSync(config['FILE_UPLOAD_PATH'])){
-    fs.mkdirSync(config['FILE_UPLOAD_PATH']);
-}
 
 
 var initialRoutes = ['/v1', '/api/v1'];
 app.use(initialRoutes, cmsApp);
 cmsApp.use('/articles', article);
+cmsApp.use('/user', users);
 
 app.get('*', function (req, res) {
     res.redirect('/#' + req.originalUrl);

@@ -8,3 +8,4 @@ const options = {
 };
 
 mongoose.connect(config["MONGO"].HOST, options);
+module.exports = mongoose;

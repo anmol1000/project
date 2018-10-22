@@ -6,6 +6,6 @@ const Medium =  db.model('Medium', new Schema({
     mediumId:ObjectId,
     mediumName:String,
     mediumNativeName:String
-}));
+},{timestamps: true}));
 
 module.exports = Medium;

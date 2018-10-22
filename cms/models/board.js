@@ -6,4 +6,4 @@ const Board =  db.model('Board', new Schema({
     boardId:ObjectId,
     boardName:String,
     boardNativeName:String
-}));
+},{timestamps: true}));
