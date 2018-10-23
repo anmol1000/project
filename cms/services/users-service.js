@@ -4,7 +4,6 @@ class UserService {
     constructor(){
 
     }
-
     async addUser({name, email, contactNumber, address, designation}){
         try{
             const user = new User({
@@ -18,7 +17,20 @@ class UserService {
             return newUser;
         }
         catch (error) {
-            console.log(error);
+            throw error;
+        }
+    }
+
+    async getUsers(searchString = ""){
+        try {
+            var userList = await User.find({
+                name: {
+                    $regex: '.*' + searchString + '.*'
+                }
+            });
+            return userList;
+        }catch (error) {
+            throw error;
         }
     }
 }

@@ -36,3 +36,4 @@ studentMapperSchema.index({
 });
 
 const StudentMapper = db.model('StudentMapper', studentMapperSchema);
+module.exports = StudentMapper;

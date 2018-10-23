@@ -2,7 +2,7 @@ const db = require('../utils/mongo-client');
 const Schema = db.Schema;
 const ObjectId = Schema.ObjectId;
 
-const User =  db.model('User',new Schema({
+var userSchema = new Schema({
     userId:ObjectId,
     name:String,
     email:String,
@@ -17,6 +17,19 @@ const User =  db.model('User',new Schema({
         type:Boolean,
         default: false
     }
-},{timestamps: true}));
+}, {
+    timestamps: true
+});
+userSchema.index({
+    user:1,
+    medium:1,
+    board:1,
+    subject:1,
+    active:1
+},{
+    unique:true
+});
+
+const User =  db.model('User',userSchema);
 
 module.exports = User;

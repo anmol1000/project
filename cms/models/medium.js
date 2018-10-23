@@ -2,10 +2,13 @@ const db = require('../utils/mongo-client');
 const Schema = db.Schema;
 const ObjectId = Schema.ObjectId;
 
-const Medium =  db.model('Medium', new Schema({
+var mediumSchema = new Schema({
     mediumId:ObjectId,
     mediumName:String,
     mediumNativeName:String
-},{timestamps: true}));
+},{
+    timestamps: true
+});
+const Medium =  db.model('Medium', mediumSchema);
 
 module.exports = Medium;
