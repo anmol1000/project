@@ -3,7 +3,6 @@ const Schema = db.Schema;
 const ObjectId = Schema.ObjectId;
 
 var userSchema = new Schema({
-    userId:ObjectId,
     name:String,
     email:String,
     contactNumber:Number,

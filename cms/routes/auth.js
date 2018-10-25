@@ -13,6 +13,7 @@ router.post('/login', function(req, res, next) {
 
 router.post('/logout', function(req, res, next){
   var googletoken = req.header('X-Auth-Token');
+  //destroy session
 });
 
 module.exports = router;

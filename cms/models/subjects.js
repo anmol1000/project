@@ -3,8 +3,7 @@ const Schema = db.Schema;
 const ObjectId = Schema.ObjectId;
 
 var subjectSchema = new Schema({
-    subjectId:ObjectId,
-    subjectName:String
+    name:String
 },{
     timestamps: true
 });

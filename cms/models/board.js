@@ -9,4 +9,6 @@ var boardSchema = new Schema({
 },{
     timestamps: true
 });
+
 const Board =  db.model('Board', boardSchema);
+module.exports = Board;

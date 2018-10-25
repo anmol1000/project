@@ -3,9 +3,8 @@ const Schema = db.Schema;
 const ObjectId = Schema.ObjectId;
 
 var mediumSchema = new Schema({
-    mediumId:ObjectId,
-    mediumName:String,
-    mediumNativeName:String
+    name:String,
+    nativeName:String
 },{
     timestamps: true
 });

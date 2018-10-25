@@ -22,6 +22,9 @@ const studentMapperSchema = new Schema({
     active: {
         type:Boolean,
         default:false
+    },
+    totalFees:{
+        type:Number
     }
 },{timestamps: true});
 
