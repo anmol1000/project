@@ -5,7 +5,7 @@ class StudentManagingService {
 
     }
     async enrollStudent({name, nativeName}){
-        // check
+        // check if student exists or not
     }
 }
 

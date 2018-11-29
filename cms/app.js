@@ -23,6 +23,9 @@ global.FileUtils = require("./utils/file-utils");
  */
 var article = require('./routes/article');
 var users = require('./routes/users');
+var subject = require('./routes/subject');
+var medium = require('./routes/medium');
+var board = require('./routes/board');
 
 var app = express();
 var cmsApp = express();
@@ -44,6 +47,9 @@ var initialRoutes = ['/v1', '/api/v1'];
 app.use(initialRoutes, cmsApp);
 cmsApp.use('/articles', article);
 cmsApp.use('/user', users);
+cmsApp.use('/subject', subject);
+cmsApp.use('/medium', medium);
+cmsApp.use('/board', board);
 
 app.get('*', function (req, res) {
     res.redirect('/#' + req.originalUrl);
