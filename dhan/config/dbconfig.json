@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "umangjalan",
+    "password": "",
+    "database": "acl",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "platform_cms",
+    "password": "p!@tF0rMcw$",
+    "database": "cms",
+    "host": "10.20.2.10",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "platform_cms",
+    "password": "p!@tF0rMcw$",
+    "database": "cms",
+    "host": "10.0.2.212",
+    "dialect": "postgres"
+  }
+}

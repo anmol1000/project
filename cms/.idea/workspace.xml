@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1690ffb9-b25e-4e9b-adf5-5cb63394ed73" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/combined.log" beforeDir="false" afterPath="$PROJECT_DIR$/combined.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/error.log" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1711275791">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="11" />
+          <entry key="project.open.time.0" value="4" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="4" />
+          <entry key="project.opened" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JSON" value="95" />
+          <entry key="JavaScript" value="325" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="js" value="325" />
+          <entry key="json" value="95" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="conf" value="3" />
+          <entry key="css" value="1" />
+          <entry key="html" value="1" />
+          <entry key="js" value="57" />
+          <entry key="json" value="8" />
+          <entry key="lock" value="2" />
+          <entry key="log" value="2" />
+          <entry key="py" value="1" />
+          <entry key="sequilizerc" value="2" />
+          <entry key="sql" value="1" />
+          <entry key="www" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="1" />
+          <entry key="JSON" value="8" />
+          <entry key="JavaScript" value="58" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="SQL" value="1" />
+          <entry key="yarn.lock" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+    </session>
+    <session id="1789945107">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="13" />
+          <entry key="project.open.time.0" value="5" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.4" value="3" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="js" value="87" />
+          <entry key="json" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="87" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="js" value="4286" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JavaScript" value="4286" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.vcs.git.usages" />
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="cms" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/fees-service.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/medium-service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/board-service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/student-details-mapper.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/services/student-managing-service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>value</find>
+      <find>this.getassetfrom</find>
+      <find>disocov</find>
+      <find>status</find>
+      <find>state</find>
+      <find>np</find>
+      <find>jingle</find>
+      <find>user_posting</find>
+      <find>discover</find>
+      <find>campaignDate</find>
+      <find>canvas</find>
+      <find>CANVAS</find>
+      <find>content-type</find>
+      <find>user</find>
+      <find>mongo</find>
+      <find>variant</find>
+      <find>cdnurl</find>
+      <find>analytics</find>
+      <find>connection</find>
+      <find>dev.platform</find>
+      <find>redis</find>
+      <find>anal</find>
+      <find>urlmodule</find>
+      <find>log4js</find>
+      <find>./utils/log</find>
+      <find>../middl</find>
+      <find>models</find>
+      <find>config</find>
+      <find>storypacket</find>
+      <find>workspace_</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>req.service.serviceUid</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/public/app/views/services/editionsEdit.html" />
+        <option value="$PROJECT_DIR$/models/notif.js" />
+        <option value="$PROJECT_DIR$/services/explore-service.js" />
+        <option value="$PROJECT_DIR$/public/app/scripts/services/article.factory.js" />
+        <option value="$PROJECT_DIR$/public/app/scripts/controllers/editionsEdit.ctrl.js" />
+        <option value="$PROJECT_DIR$/routes/notif.js" />
+        <option value="$PROJECT_DIR$/services/notif-service.js" />
+        <option value="$PROJECT_DIR$/services/edition-service.js" />
+        <option value="$PROJECT_DIR$/services/campaign-service.js" />
+        <option value="$PROJECT_DIR$/utils/zk-utils.js" />
+        <option value="$PROJECT_DIR$/fabfile_aws.py" />
+        <option value="$PROJECT_DIR$/utils/kafka.js" />
+        <option value="$PROJECT_DIR$/handlers/story-handlers/newonhike-story-handler.js" />
+        <option value="$PROJECT_DIR$/routes/stories.js" />
+        <option value="$PROJECT_DIR$/handlers/story-handlers/discover-story-handler.js" />
+        <option value="$PROJECT_DIR$/utils/ams-utils.js" />
+        <option value="$PROJECT_DIR$/public/app/scripts/config/config.js" />
+        <option value="$PROJECT_DIR$/handlers/explore-handlers/abstract-handler.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/public/microapp/assets/js/app.js" />
+        <option value="$PROJECT_DIR$/utils/log.js" />
+        <option value="$PROJECT_DIR$/middleware/user-validator.js" />
+        <option value="$PROJECT_DIR$/routes/analytics.js" />
+        <option value="$PROJECT_DIR$/routes/api-key.js" />
+        <option value="$PROJECT_DIR$/routes/assets.js" />
+        <option value="$PROJECT_DIR$/routes/article.js" />
+        <option value="$PROJECT_DIR$/utils/constants.js" />
+        <option value="$PROJECT_DIR$/utils/file-utils.js" />
+        <option value="$PROJECT_DIR$/services/auth-service.js" />
+        <option value="$PROJECT_DIR$/config/env.json" />
+        <option value="$PROJECT_DIR$/utils/mongo-client.js" />
+        <option value="$PROJECT_DIR$/services/users-service.js" />
+        <option value="$PROJECT_DIR$/routes/users.js" />
+        <option value="$PROJECT_DIR$/services/board-service.js" />
+        <option value="$PROJECT_DIR$/models/index.js" />
+        <option value="$PROJECT_DIR$/models/medium.js" />
+        <option value="$PROJECT_DIR$/models/subjects.js" />
+        <option value="$PROJECT_DIR$/models/student-details-mapper.js" />
+        <option value="$PROJECT_DIR$/models/fees.js" />
+        <option value="$PROJECT_DIR$/models/board.js" />
+        <option value="$PROJECT_DIR$/services/medium-service.js" />
+        <option value="$PROJECT_DIR$/services/subject-service.js" />
+        <option value="$PROJECT_DIR$/routes/board.js" />
+        <option value="$PROJECT_DIR$/routes/medium.js" />
+        <option value="$PROJECT_DIR$/routes/auth.js" />
+        <option value="$PROJECT_DIR$/models/login-data.js" />
+        <option value="$PROJECT_DIR$/routes/student-manager.js" />
+        <option value="$PROJECT_DIR$/models/users.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/routes/subject.js" />
+        <option value="$PROJECT_DIR$/services/student-managing-service.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/my-app/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/my-app/package.json" />
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AngularJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="SearchEverywhereHistoryKey" value="stude&#9;FILE&#9;file:///home/anmol/Documents/serverfiles/project/cms/models/student-details-mapper.js&#10;user-&#9;FILE&#9;file:///home/anmol/Documents/serverfiles/project/cms/services/users-service.js&#10;user&#9;FILE&#9;file:///home/anmol/Documents/serverfiles/project/cms/models/users.js&#10;ser&#9;FILE&#9;file:///home/anmol/Documents/serverfiles/project/cms/routes/users.js&#10;users&#9;FILE&#9;file:///home/anmol/Documents/serverfiles/project/cms/routes/users.js&#10;mode&#9;FILE&#9;file:///home/anmol/Documents/serverfiles/project/cms/models&#10;user-ser&#9;FILE&#9;file:///home/anmol/Documents/serverfiles/project/cms/services/users-service.js&#10;config/en&#9;FILE&#9;file:///home/anmol/Documents/serverfiles/project/cms/config/env.json&#10;mongo&#9;FILE&#9;file:///home/anmol/Documents/serverfiles/project/cms/utils/mongo-client.js&#10;en&#9;FILE&#9;file:///home/anmol/Documents/serverfiles/cms/config/env.json&#10;mong&#9;FILE&#9;file:///home/anmol/Documents/serverfiles/cms/utils/mongo-client.js&#10;env&#9;FILE&#9;file:///home/anmol/Documents/serverfiles/cms/config/env.json&#10;app&#9;FILE&#9;file:///home/anmol/Documents/serverfiles/cms/app.js&#10;app.js&#9;FILE&#9;file:///home/anmol/Documents/serverfiles/cms/app.js&#10;edit&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/services/edition-service.js&#10;logge&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/public/app/scripts/services/logger.service.js&#10;analytics&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/routes/analytics.js&#10;anal&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/routes/analytics.js&#10;config&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/public/app/scripts/config/config.js&#10;ap&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/app.js&#10;conf&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/public/app/scripts/config/config.js&#10;asset&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/routes/assets.js&#10;ams&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/utils/ams-utils.js&#10;disco&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/handlers/story-handlers/discover-story-handler.js&#10;dis&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/handlers/story-handlers/discover-story-handler.js&#10;stories&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/services/stories-service.js&#10;stor&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/routes/stories.js&#10;camp&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/services/campaign-service.js&#10;campa&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/services/campaign-service.js&#10;discov&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/handlers/story-handlers/discover-story-handler.js&#10;confi&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/public/app/scripts/config/config.js&#10;file&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/utils/file-utils.js&#10;stories.js&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/routes/stories.js&#10;story&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/handlers/story-handlers/pa-story-handler.js&#10;new&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/handlers/story-handlers/newonhike-story-handler.js&#10;CONST&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/utils/constants.js&#10;link&#9;null&#9;null&#10;con&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/public/app/scripts/config/config.js&#10;cons&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/utils/constants.js&#10;edition-&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/services/edition-service.js&#10;edi&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/models/edition.js&#10;pa&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/package.json&#10;log.&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/utils/log.js&#10;ka&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/utils/kafka.js&#10;pts&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/services/pts-service.js&#10;a&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/app.js&#10;zk&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/utils/zk-utils.js&#10;zk-utils.js&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/utils/zk-utils.js&#10;co&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/public/app/scripts/config/config.js&#10;db&#9;FILE&#9;file:///Users/anmolagarwal/Documents/hike/hike-content/cms/config/db.js" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/utils" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.app.js">
+    <configuration name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" application-parameters="environment = NODE_ENV=&quot;staging&quot;" path-to-js-file="app.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="index.js" working-dir="$PROJECT_DIR$/models">
+      <method v="2" />
+    </configuration>
+    <configuration name="kafka.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="kafka.js" working-dir="$PROJECT_DIR$/utils">
+      <method v="2" />
+    </configuration>
+    <configuration name="scraper.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="scraper.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="users.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="users.js" working-dir="$PROJECT_DIR$/routes">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Node.js.app.js" />
+      <item itemvalue="Node.js.index.js" />
+      <item itemvalue="Node.js.kafka.js" />
+      <item itemvalue="Node.js.scraper.js" />
+      <item itemvalue="Node.js.users.js" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.app.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1690ffb9-b25e-4e9b-adf5-5cb63394ed73" name="Default" comment="" />
+      <created>1482720899995</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1482720899995</updated>
+      <workItem from="1482720901431" duration="173983000" />
+      <workItem from="1483425482016" duration="41148000" />
+      <workItem from="1483531933942" duration="103655000" />
+      <workItem from="1484224265126" duration="151000" />
+      <workItem from="1484224446953" duration="37000" />
+      <workItem from="1484224537712" duration="104000" />
+      <workItem from="1484224695147" duration="129000" />
+      <workItem from="1484225375618" duration="8330000" />
+      <workItem from="1484284312610" duration="3234000" />
+      <workItem from="1484294351340" duration="4562000" />
+      <workItem from="1484302561078" duration="2413000" />
+      <workItem from="1484366857991" duration="51872000" />
+      <workItem from="1484807585778" duration="5210000" />
+      <workItem from="1485257849377" duration="884000" />
+      <workItem from="1485259164075" duration="15296000" />
+      <workItem from="1485375070904" duration="33759000" />
+      <workItem from="1485711128578" duration="6000" />
+      <workItem from="1485747946602" duration="53639000" />
+      <workItem from="1486028886574" duration="77000" />
+      <workItem from="1486029716228" duration="317000" />
+      <workItem from="1486039795866" duration="1906000" />
+      <workItem from="1486133313886" duration="2819000" />
+      <workItem from="1486375923054" duration="1879000" />
+      <workItem from="1486464659194" duration="22247000" />
+      <workItem from="1486633573538" duration="52000" />
+      <workItem from="1486634427439" duration="8061000" />
+      <workItem from="1486722930105" duration="43275000" />
+      <workItem from="1487135115379" duration="31644000" />
+      <workItem from="1487297313104" duration="815000" />
+      <workItem from="1487314688171" duration="17117000" />
+      <workItem from="1487590547350" duration="210000" />
+      <workItem from="1487595134806" duration="1472000" />
+      <workItem from="1487601123783" duration="113000" />
+      <workItem from="1487601560489" duration="19334000" />
+      <workItem from="1487701171884" duration="66628000" />
+      <workItem from="1488455539497" duration="9737000" />
+      <workItem from="1488552526265" duration="465000" />
+      <workItem from="1488870541540" duration="6257000" />
+      <workItem from="1488885808988" duration="49360000" />
+      <workItem from="1489506141704" duration="18526000" />
+      <workItem from="1489750521408" duration="3876000" />
+      <workItem from="1489993463808" duration="26560000" />
+      <workItem from="1490169061715" duration="4002000" />
+      <workItem from="1490179275421" duration="1160000" />
+      <workItem from="1490180598891" duration="3127000" />
+      <workItem from="1490184495415" duration="3043000" />
+      <workItem from="1490241227868" duration="39416000" />
+      <workItem from="1490610479128" duration="51878000" />
+      <workItem from="1490810113661" duration="188000" />
+      <workItem from="1490857212520" duration="7885000" />
+      <workItem from="1490871549664" duration="11459000" />
+      <workItem from="1490888629407" duration="896000" />
+      <workItem from="1490895700990" duration="293000" />
+      <workItem from="1490897361303" duration="18000" />
+      <workItem from="1490897655305" duration="6607000" />
+      <workItem from="1451606477054" duration="5427000" />
+      <workItem from="1490980600925" duration="261000" />
+      <workItem from="1491004579999" duration="210000" />
+      <workItem from="1491017203550" duration="7324000" />
+      <workItem from="1491209891359" duration="257000" />
+      <workItem from="1491210619122" duration="12034000" />
+      <workItem from="1491295618360" duration="20220000" />
+      <workItem from="1491404824119" duration="6375000" />
+      <workItem from="1491552400884" duration="7988000" />
+      <workItem from="1491897175764" duration="706000" />
+      <workItem from="1491920934930" duration="538000" />
+      <workItem from="1491967017024" duration="1001000" />
+      <workItem from="1492004272880" duration="84000" />
+      <workItem from="1492076816732" duration="2249000" />
+      <workItem from="1492173898065" duration="1427000" />
+      <workItem from="1492271748555" duration="2193000" />
+      <workItem from="1492454927175" duration="524000" />
+      <workItem from="1492503623244" duration="9226000" />
+      <workItem from="1492574495366" duration="1000" />
+      <workItem from="1492587542181" duration="7287000" />
+      <workItem from="1492608071582" duration="900000" />
+      <workItem from="1492609743904" duration="2542000" />
+      <workItem from="1492624639487" duration="1214000" />
+      <workItem from="1492675363776" duration="4578000" />
+      <workItem from="1492761094624" duration="10291000" />
+      <workItem from="1492782905538" duration="3768000" />
+      <workItem from="1493035023506" duration="796000" />
+      <workItem from="1493051452469" duration="217000" />
+      <workItem from="1493113328210" duration="1702000" />
+      <workItem from="1493128134214" duration="6991000" />
+      <workItem from="1493260975487" duration="1309000" />
+      <workItem from="1493291482086" duration="1076000" />
+      <workItem from="1493314642172" duration="28828000" />
+      <workItem from="1493820144794" duration="4220000" />
+      <workItem from="1494144079363" duration="8999000" />
+      <workItem from="1494332198148" duration="6947000" />
+      <workItem from="1494484427622" duration="19299000" />
+      <workItem from="1494574076119" duration="2770000" />
+      <workItem from="1494838630498" duration="2868000" />
+      <workItem from="1494845025250" duration="3205000" />
+      <workItem from="1494936992240" duration="16311000" />
+      <workItem from="1495110630840" duration="3122000" />
+      <workItem from="1495180484374" duration="868000" />
+      <workItem from="1495186771455" duration="1598000" />
+      <workItem from="1496056139017" duration="4720000" />
+      <workItem from="1496130320407" duration="2127000" />
+      <workItem from="1496405451811" duration="489000" />
+      <workItem from="1496409246635" duration="1146000" />
+      <workItem from="1496636055841" duration="4907000" />
+      <workItem from="1496664049248" duration="4836000" />
+      <workItem from="1496687073939" duration="23820000" />
+      <workItem from="1496916115258" duration="364000" />
+      <workItem from="1497064809069" duration="457000" />
+      <workItem from="1497079474884" duration="2679000" />
+      <workItem from="1497251447840" duration="3112000" />
+      <workItem from="1497265603663" duration="451000" />
+      <workItem from="1497288051575" duration="1338000" />
+      <workItem from="1497342360006" duration="19000" />
+      <workItem from="1497350704516" duration="32942000" />
+      <workItem from="1497613399503" duration="4404000" />
+      <workItem from="1497858394372" duration="905000" />
+      <workItem from="1497897243588" duration="199000" />
+      <workItem from="1497899375324" duration="67000" />
+      <workItem from="1497927672990" duration="416000" />
+      <workItem from="1497959399291" duration="919000" />
+      <workItem from="1497963024444" duration="255000" />
+      <workItem from="1498030127379" duration="459000" />
+      <workItem from="1498208982854" duration="1581000" />
+      <workItem from="1499240224541" duration="173000" />
+      <workItem from="1499680500742" duration="755000" />
+      <workItem from="1499776067837" duration="756000" />
+      <workItem from="1499858493044" duration="1001000" />
+      <workItem from="1499860750448" duration="607000" />
+      <workItem from="1500283825725" duration="4374000" />
+      <workItem from="1500375150822" duration="7729000" />
+      <workItem from="1500428556119" duration="14791000" />
+      <workItem from="1500523362012" duration="21640000" />
+      <workItem from="1500629429191" duration="8774000" />
+      <workItem from="1500871885543" duration="19196000" />
+      <workItem from="1500987343430" duration="340000" />
+      <workItem from="1501140313102" duration="2042000" />
+      <workItem from="1501149213015" duration="606000" />
+      <workItem from="1501163462943" duration="619000" />
+      <workItem from="1501233732288" duration="391000" />
+      <workItem from="1501235288915" duration="1125000" />
+      <workItem from="1501493812507" duration="4785000" />
+      <workItem from="1501592964174" duration="1135000" />
+      <workItem from="1501654512825" duration="1274000" />
+      <workItem from="1501847527047" duration="700000" />
+      <workItem from="1502257155754" duration="206000" />
+      <workItem from="1502284970964" duration="1578000" />
+      <workItem from="1503050856604" duration="110000" />
+      <workItem from="1503051184985" duration="1515000" />
+      <workItem from="1503074770415" duration="3389000" />
+      <workItem from="1503243431358" duration="176000" />
+      <workItem from="1503302345147" duration="5392000" />
+      <workItem from="1503385845037" duration="694000" />
+      <workItem from="1503568338770" duration="984000" />
+      <workItem from="1503580809255" duration="1878000" />
+      <workItem from="1504009399663" duration="2334000" />
+      <workItem from="1504089209740" duration="1537000" />
+      <workItem from="1504161880216" duration="317000" />
+      <workItem from="1504163535771" duration="411000" />
+      <workItem from="1504165505831" duration="261000" />
+      <workItem from="1504233583814" duration="8738000" />
+      <workItem from="1504358591243" duration="329000" />
+      <workItem from="1504380967788" duration="14056000" />
+      <workItem from="1504772923018" duration="8490000" />
+      <workItem from="1505112353589" duration="2955000" />
+      <workItem from="1505179002532" duration="283000" />
+      <workItem from="1505310952604" duration="603000" />
+      <workItem from="1505470448262" duration="636000" />
+      <workItem from="1505795215587" duration="1060000" />
+      <workItem from="1505806291476" duration="962000" />
+      <workItem from="1505811864362" duration="3115000" />
+      <workItem from="1505826218164" duration="6537000" />
+      <workItem from="1505909665417" duration="2187000" />
+      <workItem from="1506066913676" duration="333000" />
+      <workItem from="1506325620499" duration="3393000" />
+      <workItem from="1506342285034" duration="2228000" />
+      <workItem from="1506407337938" duration="1595000" />
+      <workItem from="1506409520608" duration="14000" />
+      <workItem from="1506411289306" duration="1367000" />
+      <workItem from="1506503368417" duration="536000" />
+      <workItem from="1506505162430" duration="566000" />
+      <workItem from="1506604363961" duration="1689000" />
+      <workItem from="1507101892234" duration="644000" />
+      <workItem from="1507117034953" duration="931000" />
+      <workItem from="1507291212282" duration="392000" />
+      <workItem from="1507532911213" duration="4461000" />
+      <workItem from="1507550360694" duration="419000" />
+      <workItem from="1507552283970" duration="1249000" />
+      <workItem from="1507629498909" duration="1030000" />
+      <workItem from="1507706491563" duration="8949000" />
+      <workItem from="1507793456417" duration="10280000" />
+      <workItem from="1508084009952" duration="58653000" />
+      <workItem from="1508263383667" duration="13872000" />
+      <workItem from="1508765314414" duration="2998000" />
+      <workItem from="1508919261818" duration="1555000" />
+      <workItem from="1509014357266" duration="806000" />
+      <workItem from="1509015756543" duration="926000" />
+      <workItem from="1509345057887" duration="1664000" />
+      <workItem from="1509434005817" duration="695000" />
+      <workItem from="1509523110952" duration="1375000" />
+      <workItem from="1509531595913" duration="608000" />
+      <workItem from="1510048527177" duration="1419000" />
+      <workItem from="1510051381221" duration="1070000" />
+      <workItem from="1510055444452" duration="13000" />
+      <workItem from="1510055509002" duration="83000" />
+      <workItem from="1510055760548" duration="4775000" />
+      <workItem from="1510130319048" duration="2463000" />
+      <workItem from="1510136562769" duration="28967000" />
+      <workItem from="1510232867393" duration="18623000" />
+      <workItem from="1510565681903" duration="27776000" />
+      <workItem from="1510815158465" duration="3850000" />
+      <workItem from="1510822732284" duration="43000" />
+      <workItem from="1510822961527" duration="5529000" />
+      <workItem from="1510900632078" duration="32533000" />
+      <workItem from="1511275385297" duration="8069000" />
+      <workItem from="1511781471948" duration="30000" />
+      <workItem from="1511781527823" duration="3000" />
+      <workItem from="1512129154213" duration="581000" />
+      <workItem from="1512384171006" duration="949000" />
+      <workItem from="1512634140597" duration="15092000" />
+      <workItem from="1513078501337" duration="9184000" />
+      <workItem from="1483229990381" duration="110000" />
+      <workItem from="1513755649318" duration="887000" />
+      <workItem from="1513852182812" duration="22000" />
+      <workItem from="1513931409808" duration="1760000" />
+      <workItem from="1514292043840" duration="1723000" />
+      <workItem from="1514380556206" duration="525000" />
+      <workItem from="1514446517879" duration="2121000" />
+      <workItem from="1514529089080" duration="554000" />
+      <workItem from="1514655699061" duration="84000" />
+      <workItem from="1514782014168" duration="4823000" />
+      <workItem from="1514890571673" duration="867000" />
+      <workItem from="1514892153210" duration="903000" />
+      <workItem from="1514934499232" duration="856000" />
+      <workItem from="1515029185506" duration="10162000" />
+      <workItem from="1515405062915" duration="6045000" />
+      <workItem from="1515481793405" duration="1265000" />
+      <workItem from="1515662582407" duration="484000" />
+      <workItem from="1515668183843" duration="466000" />
+      <workItem from="1515745017552" duration="3350000" />
+      <workItem from="1515957228402" duration="338000" />
+      <workItem from="1516268313625" duration="3130000" />
+      <workItem from="1516703358044" duration="827000" />
+      <workItem from="1517211114562" duration="334000" />
+      <workItem from="1517215637800" duration="2018000" />
+      <workItem from="1517481200367" duration="725000" />
+      <workItem from="1517834236444" duration="44479000" />
+      <workItem from="1518169409697" duration="9153000" />
+      <workItem from="1518416817216" duration="268000" />
+      <workItem from="1518419290975" duration="3683000" />
+      <workItem from="1518432166379" duration="1178000" />
+      <workItem from="1518523986555" duration="12628000" />
+      <workItem from="1518690817462" duration="6235000" />
+      <workItem from="1519026707152" duration="2871000" />
+      <workItem from="1519036473572" duration="1496000" />
+      <workItem from="1519204369277" duration="10450000" />
+      <workItem from="1519292035471" duration="716000" />
+      <workItem from="1519635530960" duration="622000" />
+      <workItem from="1519638648362" duration="392000" />
+      <workItem from="1520497412982" duration="596000" />
+      <workItem from="1520575764359" duration="12980000" />
+      <workItem from="1520776290947" duration="490000" />
+      <workItem from="1520839733048" duration="7397000" />
+      <workItem from="1520855841208" duration="534000" />
+      <workItem from="1520856558842" duration="11175000" />
+      <workItem from="1520946201249" duration="8321000" />
+      <workItem from="1521023189243" duration="19068000" />
+      <workItem from="1521455464147" duration="2352000" />
+      <workItem from="1521480727332" duration="12000" />
+      <workItem from="1521537273498" duration="3546000" />
+      <workItem from="1521614328300" duration="2842000" />
+      <workItem from="1521656678478" duration="136000" />
+      <workItem from="1521708951608" duration="2257000" />
+      <workItem from="1521805335532" duration="870000" />
+      <workItem from="1521810962117" duration="540000" />
+      <workItem from="1521881228013" duration="575000" />
+      <workItem from="1521883758373" duration="4047000" />
+      <workItem from="1521894862278" duration="1318000" />
+      <workItem from="1521896693929" duration="719000" />
+      <workItem from="1521966499925" duration="49000" />
+      <workItem from="1521966922136" duration="207000" />
+      <workItem from="1521967426676" duration="13000" />
+      <workItem from="1521967504944" duration="99000" />
+      <workItem from="1521976820515" duration="109000" />
+      <workItem from="1521981597569" duration="673000" />
+      <workItem from="1521985273977" duration="26000" />
+      <workItem from="1522746527418" duration="3401000" />
+      <workItem from="1522847380277" duration="1587000" />
+      <workItem from="1522925506060" duration="11358000" />
+      <workItem from="1523351488677" duration="1702000" />
+      <workItem from="1523363132483" duration="13000" />
+      <workItem from="1523366239210" duration="1239000" />
+      <workItem from="1523446156750" duration="495000" />
+      <workItem from="1524036959884" duration="1114000" />
+      <workItem from="1524219675444" duration="1050000" />
+      <workItem from="1524482455710" duration="447000" />
+      <workItem from="1526010470953" duration="868000" />
+      <workItem from="1526016833468" duration="1063000" />
+      <workItem from="1526383318123" duration="484000" />
+      <workItem from="1526466478366" duration="428000" />
+      <workItem from="1526469361442" duration="920000" />
+      <workItem from="1526550023543" duration="320000" />
+      <workItem from="1526555602048" duration="419000" />
+      <workItem from="1527071009428" duration="1225000" />
+      <workItem from="1527155811294" duration="965000" />
+      <workItem from="1527227001004" duration="205000" />
+      <workItem from="1539612828651" duration="890000" />
+      <workItem from="1539678179657" duration="1147000" />
+      <workItem from="1539680874844" duration="668000" />
+      <workItem from="1539686868611" duration="625000" />
+      <workItem from="1539687537513" duration="603000" />
+      <workItem from="1539697474709" duration="17000" />
+      <workItem from="1539698185432" duration="22000" />
+      <workItem from="1539700060330" duration="251000" />
+      <workItem from="1539701919690" duration="5557000" />
+      <workItem from="1539766635402" duration="3689000" />
+      <workItem from="1539781338727" duration="3000" />
+      <workItem from="1539782006224" duration="3148000" />
+      <workItem from="1539790705754" duration="19176000" />
+      <workItem from="1540193659045" duration="7000" />
+      <workItem from="1540198711151" duration="6310000" />
+      <workItem from="1540300083882" duration="25000" />
+      <workItem from="1540303884007" duration="4610000" />
+      <workItem from="1540361295373" duration="12000" />
+      <workItem from="1540361323025" duration="602000" />
+      <workItem from="1540458143294" duration="15000" />
+      <workItem from="1540458182236" duration="3135000" />
+      <workItem from="1540462529608" duration="406000" />
+      <workItem from="1540473167159" duration="6731000" />
+      <workItem from="1540796006568" duration="1167000" />
+      <workItem from="1542784177881" duration="70000" />
+      <workItem from="1543480938178" duration="5746000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2034756000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48706895" visible="true" weight="0.21888646" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Palette&#9;" order="4" />
+      <window_info id="npm" order="5" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.51293105" side_tool="true" weight="0.20234375" />
+      <window_info id="Image Layers" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.34197408" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49375" weight="0.2616202" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38683948" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50625" side_tool="true" weight="0.30942896" />
+      <window_info anchor="bottom" id="TypeScript" order="8" />
+      <window_info anchor="bottom" id="Sequence" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32901296" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Designer" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/services/users-service.js</url>
+          <line>11</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/services/users-service.js</url>
+          <line>8</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/services/users-service.js</url>
+          <line>10</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/users.js</url>
+          <line>17</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/users.js</url>
+          <line>20</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/services/users-service.js</url>
+          <line>19</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/users.js</url>
+          <line>28</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="NodeJSConfigurationType">
+        <watch expression="storyPacket.np.value" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/config/mongo-client.js" />
+    <entry file="file://$PROJECT_DIR$/fabfile.py" />
+    <entry file="file://$PROJECT_DIR$/error.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json" />
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/db.js" />
+    <entry file="file://$PROJECT_DIR$/config/dbconfig.json" />
+    <entry file="file://$PROJECT_DIR$/config/redis-client.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache/cache-keys.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/error.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/error-handler.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/kafka.js" />
+    <entry file="file://$PROJECT_DIR$/utils/scraper-utils.js" />
+    <entry file="file://$PROJECT_DIR$/.sequilizerc" />
+    <entry file="file://$PROJECT_DIR$/yarn.lock" />
+    <entry file="file://$PROJECT_DIR$/combined.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/file-utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy/cms.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/service-error.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/error-code-enum.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache/cache-manager.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/encrypt.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/log.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/mongo-client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/env.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/subjects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/fees.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/board.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/fees.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/medium.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/login-data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/article.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/board.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="26" column="47" lean-forward="true" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/student-manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/subject.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/medium.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/medium-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/fees-service.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/subject-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/board-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/users-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/auth-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/student-details-mapper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/student-managing-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
