@@ -1,0 +1,84 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+main{
+  height:100%;
+}
+#root {
+  height: 100%;
+}
+
+#loginWrapper{
+  height: 100%;
+}
+.loginPage{
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: center;
+   align-items: center;
+   height: 70%;
+}
+#catchyHeadline{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 44px;
+}
+.loginBody{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  font-size:10px;
+}
+.username {
+  background-color: white;
+  padding: 14px 39px 14px 19px;
+  border-left: 1px;
+  border-right: 1px;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: #bac9d4;
+  border-radius: 5px;
+  font-size: 21px;
+  width: 338px;
+  margin-bottom: 10px;
+}
+
+.password {
+  background-color: white;
+  padding: 14px 39px 14px 19px;
+  border-left: 1px;
+  border-right: 1px;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: #bac9d4;
+  border-radius: 5px;
+  font-size: 21px;
+  width: 338px;
+  margin-bottom: 10px;
+}
+
+.submitButton {
+  color: white;
+  background-color: #85c51f;
+  padding: 12px 12px 16px 7px;
+  border-left: 1px;
+  border-right: 1px;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: #659c17;
+  border-radius: 5px;
+  font-size: 21px;
+  width: 400px;
+}
