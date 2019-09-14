@@ -17,6 +17,7 @@ global.log = require('./utils/log.js');
  */
 
 var auth = require('./routes/auth');
+var channel = require('./routes/channel');
 var user = require('./routes/user');
 var ping = require('./routes/ping');
 
@@ -43,7 +44,8 @@ app.use('/ping' , ping);
 var initialRoutes = ['/v1', '/api/v1'];
 app.use(initialRoutes, channelsApp);
 channelsApp.use('/user', user);
-channelsApp.use('/channel', channnel);
+channelsApp.use('/channel', channel);
+channelsApp.use('/', auth);
 
 
 app.get('*', function (req, res) {
@@ -78,8 +80,8 @@ app.use(function (err, req, res, next) {
 // handle production error handler
 // no stacktraces leaked to user
 
-var mongoClient = require('./config/mongo-client');
-new mongoClient.start();
+// var mongoClient = require('./config/mongo-client');
+// new mongoClient.start();
 
 var server = app.listen(config["CHANNELS"].PORT, function () {
 

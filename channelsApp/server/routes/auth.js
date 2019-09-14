@@ -1,20 +1,38 @@
 var express = require('express');
 var router = express.Router();
-var AuthService = require('../services/auth-service');
 var UserService = require('../services/user-service');
 
 
-router.post('/login', function(req, res, next) {
-    var authService = new AuthService();
-    var userService = new UserService();
-    var username = req.body.username;
-    var password = req.body.password;
+router.post('/login', async function(req, res, next) {
+
+    try{
+        var userService = new UserService();
+        var payload = req.body;
+        var user = await userService.getUserByName({
+            userName: payload.name
+        });
+        console.log("User is ", user.password);
+        if (user.password === payload.password){
+            res.send({
+                auth: true,
+                user: user
+            });
+        }
+        res.send({
+            auth: false
+        })
+
+    } catch (e) {
+        res.send({
+            auth: false
+        })
+
+    }
 
 
 });
 
 router.post('/logout', function(req, res, next){
-    var authservice = new AuthService();
 
 });
 
