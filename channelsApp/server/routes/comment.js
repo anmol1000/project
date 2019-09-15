@@ -24,7 +24,9 @@ router.get('/:channelName', async function(req, res, next){
         var commentService = new CommentService();
         var channelName = req.params.channelName;
         var response = await commentService.getComment({channelName});
-        res.send(response);
+        res.send({
+            comments:response
+        });
     } catch (e) {
         res.send("Unable to add Channel" + e.message);
     }

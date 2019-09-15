@@ -1,13 +1,9 @@
 import React, {Component} from 'react';
 import { Button } from "../containers/Button";
 import {InputField} from "../containers/Input";
-import { loginUser, loginUserSuccess, loginUserFailure } from '../../actions/users';
+import { loginUser, loginUserSuccess, loginUserFailure } from '../../actions/login';
 import {connect} from "react-redux";
 import { withRouter } from "react-router-dom";
-
-
-
-
 
 class Login extends Component {
     constructor(props) {

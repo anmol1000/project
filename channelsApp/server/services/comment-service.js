@@ -25,7 +25,7 @@ class CommentService {
             var newComment = await comment.save();
             return newComment;
         } catch (e) {
-            
+            throw e;
         }
 
     }
@@ -33,10 +33,10 @@ class CommentService {
     async getComment ({channelName}){
         try{
             var channelService = new ChannelService();
-            var channel = channelService.getChannelByName({
+            var channel = await channelService.getChannelByName({
                 channelName
             });
-            var comment = Comment.find({
+            var comment = await Comment.find({
                 channel
             });
             return comment;

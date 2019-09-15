@@ -11,7 +11,6 @@ router.post('/', async function(req, res, next) {
         channelName:payload.name,
         channelType:payload.type
     };
-    console.log(req);
     var response = await channelService.addChannel(options);
     res.send("Channel successfully added");
 
@@ -45,7 +44,9 @@ router.get('/', async function(req, res, next){
             var resultFilter = req.query.filter;
         }
         var response = await channelService.getChannels(resultFilter);
-        res.send(response);
+        res.send({
+            channels:response
+        });
     } catch (e) {
         res.send("Unable to add Channel" + e.message);
     }

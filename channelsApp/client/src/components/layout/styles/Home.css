@@ -1,5 +1,27 @@
 .body {
-    background-image: url('../../../assets/images/desktop.jpg');
-    background-color: #cccccc;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex:1 1 auto
+}
 
+.channelContainer {
+    display: flex;
+    flex-direction: column;
+}
+.channelBox {
+    background-color: #eaedef;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:200px;
+    border-width: 10px;
+    border-color: #071201;
+    list-style-type:none
+}
+
+.commentContainer {
+    width: 100px;
+    height: 100px;
 }

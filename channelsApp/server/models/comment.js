@@ -1,6 +1,5 @@
 const db = require('../utils/mongo-client');
 const Schema = db.Schema;
-const ObjectId = Schema.ObjectId;
 
 const commentSchema = new Schema({
     text: String,
@@ -15,8 +14,8 @@ const commentSchema = new Schema({
 },{timestamps: true});
 
 commentSchema.index({
-    name:1,
-    type:1
+    text:1,
+    channel:1
 },{
     unique:true
 });

@@ -6,6 +6,8 @@ var path = require('path');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var http = require("http");
+var WebSocket = require('ws');
 /*
  global variables
  */
@@ -18,8 +20,10 @@ global.log = require('./utils/log.js');
 
 var auth = require('./routes/auth');
 var channel = require('./routes/channel');
+var comment = require('./routes/comment');
 var user = require('./routes/user');
 var ping = require('./routes/ping');
+var channelService = require('./services/channel-service');
 
 var app = express();
 var channelsApp = express();
@@ -45,6 +49,7 @@ var initialRoutes = ['/v1', '/api/v1'];
 app.use(initialRoutes, channelsApp);
 channelsApp.use('/user', user);
 channelsApp.use('/channel', channel);
+channelsApp.use('/comment', comment);
 channelsApp.use('/', auth);
 
 
@@ -77,15 +82,27 @@ app.use(function (err, req, res, next) {
     });
 });
 
-// handle production error handler
-// no stacktraces leaked to user
 
-// var mongoClient = require('./config/mongo-client');
-// new mongoClient.start();
+const server = http.createServer(app);
+const wss = new WebSocket.Server({ server });
 
-var server = app.listen(config["CHANNELS"].PORT, function () {
+wss.on('connection', (ws) => {
+    ws.on('message', (message) => {
+        console.log("message sent by client is: ", message);
+        wss.clients.forEach(function each(client) {
+            if (client !== ws && client.readyState === WebSocket.OPEN) {
+                client.send(message);
+            }
+        });
+    });
+}).on('error', (error) =>{
+    console.log(error);
+});
+
+server.listen(config["CHANNELS"].PORT, function () {
 
     log.info('Ready on port %d', server.address().port);
+
 });
 
 module.exports = app;

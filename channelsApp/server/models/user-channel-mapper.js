@@ -1,6 +1,5 @@
 const db = require('../utils/mongo-client');
 const Schema = db.Schema;
-const ObjectId = Schema.ObjectId;
 
 const channelMapperSchema = new Schema({
     user:{

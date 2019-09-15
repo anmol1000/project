@@ -1,5 +1,6 @@
 import axios from 'axios';
 import actionTypes from '../constants/actionTypes';
+import history from '../history';
 const ROOT_URL = window.location.href.indexOf('localhost') > 0 ? 'http://localhost:8000/v1' : '/api';
 
 
@@ -13,10 +14,13 @@ export function signUpUser(formValues) {
 }
 
 export function loginUserSuccess(user) {
-    return {
-        type: actionTypes.LOGIN_USER_SUCCESS,
-        payload: user
-    };
+    return (dispatch) => {
+        dispatch ({
+            type: actionTypes.LOGIN_USER_SUCCESS,
+            payload: user
+        });
+        history.push('/home');
+    }
 }
 
 export function loginUserFailure(error) {
@@ -39,13 +43,12 @@ export function loginUser(username, password) {
             body: JSON.stringify({name: username, password}),
             mode: 'cors'
         })
-            .then((response) => {
-                console.log("Login Response is")
-                if (!response.ok) {
-                    throw Error(response.statusText);
+            .then((response) => response.json()).then(data => {
+                console.log(data);
+                if (data.auth === true) {
+                    dispatch(loginUserSuccess(data.user))
                 } else {
-                    dispatch(loginUserSuccess(response))
-
+                    throw Error(data.statusText);
                 }
             })
             .catch((e) => console.log(e));

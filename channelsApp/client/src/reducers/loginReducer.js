@@ -1,7 +1,8 @@
 import constants from '../constants/actionTypes'
 
 var initialState = {
-    userLoggedIn: false
+    loggedInUser: null,
+    isUserLoggedIn: false
 };
 
 export default (state = initialState, action) => {
@@ -11,13 +12,14 @@ export default (state = initialState, action) => {
         case constants.LOGIN_USER_SUCCESS:
             return {
                 ...state,
-                userLoggedIn: true
+                isUserLoggedIn: true,
+                loggedInUser: action.payload
             };
 
         case  constants.LOGIN_USER_FAILURE:
             return {
                 ...state,
-                userLoggedIn: false
+                isUserLoggedIn: false
             };
 
         default:
