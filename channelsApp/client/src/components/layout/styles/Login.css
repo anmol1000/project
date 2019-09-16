@@ -1,3 +1,50 @@
-.body {
+html, body {
+    height: 100%;
+}
+#root{
+    height: 100%
+}
 
+.loginBodyContainer {
+    background-image: url("../../../assets/images/desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height: 100%
+}
+
+.loginContainer {
+    width: 450px;
+    height:250px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #0d2ce0;
+    border-radius:5px;
+}
+
+.username {
+
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    align: center;
+    align-content: center;
+    border-radius: 5px;
+}
+
+.password {
+
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    align: center;
+    align-content: center;
+    border-radius: 5px;
 }

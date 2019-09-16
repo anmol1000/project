@@ -8,6 +8,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var http = require("http");
 var WebSocket = require('ws');
+var cors = require('cors')
 /*
  global variables
  */
@@ -26,6 +27,7 @@ var ping = require('./routes/ping');
 var channelService = require('./services/channel-service');
 
 var app = express();
+app.use(cors({ origins: '*:*' }))
 var channelsApp = express();
 
 app.all('*', function (req, res, next) {

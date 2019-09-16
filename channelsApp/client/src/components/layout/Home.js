@@ -19,9 +19,9 @@ class Home extends Component {
         const { login, channel } = this.props;
         const userChannels = channel.joinedChannels.map((joinedChannel) => {
             return(
-                <li onClick={this.selectChannel.bind(this, joinedChannel)} className="channelBox">
+                <div onClick={this.selectChannel.bind(this, joinedChannel)} className="channelBox">
                     {joinedChannel.name}
-                </li>
+                </div>
             );
         });
         const userComments = channel.commentsForSelectedChannel.map((channelComment) => {
@@ -32,11 +32,14 @@ class Home extends Component {
             );
         });
         return (
-            <div className="body">
+            <div className="channelBody">
                 <div className="channelContainer">
-                    <ol >
+                    <div className="channelLabel">
+                        Joined Channels
+                    </div>
+                    <div className="channelListContainer">
                         {userChannels}
-                    </ol>
+                    </div>
                 </div>
                 <div className="commentContainer">
                     {userComments}

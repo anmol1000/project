@@ -3,7 +3,8 @@ import React from 'react';
 export const InputField = ({
     placeholder,
     type = "text",
-    onChange
+    onChange,
+    style = ''
 
 }) => {
     return(
@@ -11,6 +12,7 @@ export const InputField = ({
             placeholder={placeholder}
             type={type}
             onChange={onChange}
+            className= {style}
         />
     )
 };

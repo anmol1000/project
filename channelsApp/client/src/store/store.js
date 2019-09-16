@@ -4,7 +4,7 @@ import loginReducer from '../reducers/loginReducer';
 import channelReducer from "../reducers/channelReducer";
 import { init } from "../actions/websockets";
 
-init();
+
 function logger({ getState }) {
     return next => action => {
         console.log('will dispatch', action);
@@ -29,6 +29,7 @@ const store = createStore(
         thunk
     )
 );
+init();
 // init(store);
 
 export default store;

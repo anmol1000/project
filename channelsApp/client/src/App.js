@@ -11,10 +11,8 @@ class App extends Component {
         return (
             <Provider store={store}>
                 <Router  history={history}>
-                    <div>
-                        <Route exact path="/" component={Login} />
-                        <Route path="/home" component={Home} />
-                    </div>
+                    <Route exact path="/" component={Login} />
+                    <Route path="/home" component={Home} />
                 </Router>
             </Provider>
     );

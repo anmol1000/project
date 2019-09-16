@@ -33,13 +33,15 @@ export function fetchJoinedChannels(user) {
 }
 
 export function channelSelectedOnClick(selectedChannel) {
-    return (dispatch, getState) => {
+    return dispatch => {
         dispatch({
             type: actionTypes.CHANNEL_SELECTED,
             payload: selectedChannel
         });
         dispatch(fetchCommentsForSelectedChannel(selectedChannel))
-        emit( "sdffhdsdsjhfg", {});
+        emit({
+            type:"COMMENT_ADDED"
+        });
     }
 }
 

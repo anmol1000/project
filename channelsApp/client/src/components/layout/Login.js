@@ -4,6 +4,7 @@ import {InputField} from "../containers/Input";
 import { loginUser, loginUserSuccess, loginUserFailure } from '../../actions/login';
 import {connect} from "react-redux";
 import { withRouter } from "react-router-dom";
+import './styles/Login.css'
 
 class Login extends Component {
     constructor(props) {
@@ -21,29 +22,34 @@ class Login extends Component {
 
     render() {
         return (
-            <div className="container" >
-                <InputField
-                    placeholder={"Login"}
-                    onChange = { (event) => {
-                    this.setState({
-                        loginUser: event.target.value
-                    })
-                }}
-                />
+            <div className="loginBodyContainer" >
+                <div className="loginContainer">
 
-                <InputField
-                    placeholder={"Password"}
-                    type={"password"}
-                    onChange = { (event) => {
-                        this.setState({
-                            loginPassword : event.target.value
-                        })
-                }}
-                />
-                <Button
-                    btnText={"Login"}
-                    onClick = {this.validateAndLoginUser.bind(this)}
-                />
+                    <InputField
+                        placeholder={"Username"}
+                        onChange = { (event) => {
+                            this.setState({
+                                loginUser: event.target.value
+                            })
+                        }}
+                        style="username"
+                    />
+
+                    <InputField
+                        placeholder={"Password"}
+                        type={"password"}
+                        onChange = { (event) => {
+                            this.setState({
+                                loginPassword : event.target.value
+                            })
+                        }}
+                        style="password"
+                    />
+                    <Button
+                        btnText={"Login"}
+                        onClick = {this.validateAndLoginUser.bind(this)}
+                    />
+                </div>
             </div>
         );
 
