@@ -1,4 +1,5 @@
 import axios from 'axios';
+import {init} from "./websockets"
 import actionTypes from '../constants/actionTypes';
 import history from '../history';
 const ROOT_URL = window.location.href.indexOf('localhost') > 0 ? 'http://localhost:8000/v1' : '/api';
@@ -47,6 +48,7 @@ export function loginUser(username, password) {
                 console.log(data);
                 if (data.auth === true) {
                     dispatch(loginUserSuccess(data.user))
+                    init(dispatch,data.user.username);
                 } else {
                     throw Error(data.statusText);
                 }

@@ -14,6 +14,7 @@ var cors = require('cors')
  */
 global.config = require('./config/env.json')[process.env.NODE_ENV || 'development'];
 global.log = require('./utils/log.js');
+global.connectedWebSocketUsers = [];
 
 /*
  routes
@@ -24,7 +25,7 @@ var channel = require('./routes/channel');
 var comment = require('./routes/comment');
 var user = require('./routes/user');
 var ping = require('./routes/ping');
-var channelService = require('./services/channel-service');
+var CommentService = require('./services/comment-service');
 
 var app = express();
 app.use(cors({ origins: '*:*' }))
@@ -88,15 +89,21 @@ app.use(function (err, req, res, next) {
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
-wss.on('connection', (ws) => {
-    ws.on('message', (message) => {
-        console.log("message sent by client is: ", message);
-        wss.clients.forEach(function each(client) {
-            if (client !== ws && client.readyState === WebSocket.OPEN) {
-                client.send(message);
-            }
-        });
+wss.on('connection', (ws, req) => {
+    var url = req.url;
+    var userName = url.substring(11, url.length);
+    connectedWebSocketUsers.push({
+        userName:ws
     });
+
+    ws.on('message', (message) => {
+        var commentService = new CommentService();
+
+    });
+    ws.on('close', function () {
+        delete connectedWebSocketUsers[userName];
+        console.log('deleted: ' + userName);
+    })
 }).on('error', (error) =>{
     console.log(error);
 });

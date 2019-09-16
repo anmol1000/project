@@ -39,9 +39,6 @@ export function channelSelectedOnClick(selectedChannel) {
             payload: selectedChannel
         });
         dispatch(fetchCommentsForSelectedChannel(selectedChannel))
-        emit({
-            type:"COMMENT_ADDED"
-        });
     }
 }
 
@@ -61,4 +58,22 @@ export function fetchCommentsForSelectedChannel(selectedChannel) {
             })
             .catch((e) => console.log(e));
     }
+}
+
+export function userCommented(commentText, selectedChannel, selectedUser) {
+    var channelName = selectedChannel.name;
+    var userName = selectedUser.username;
+    return dispatch => {
+        dispatch({
+            type: actionTypes.USER_COMMENTED,
+            payload: commentText
+        });
+        emit({
+            type:"COMMENT_ADDED",
+            channelName,
+            userName,
+            commentText
+        });
+    }
+
 }

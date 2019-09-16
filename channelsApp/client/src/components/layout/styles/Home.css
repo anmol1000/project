@@ -51,3 +51,21 @@ html, body {
     display: flex;
     flex-direction:column;
 }
+
+.commentLabel {
+    height: 100px;
+    width:1500px;
+    background-color: #0fffa5;
+    border-style: solid;
+    border-width:1px;
+    border-color: #ffc01f;
+}
+
+.commentBox {
+    margin:5px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #39c2f1;
+    border-radius: 5px;
+}

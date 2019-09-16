@@ -4,7 +4,8 @@ export const InputField = ({
     placeholder,
     type = "text",
     onChange,
-    style = ''
+    style = '',
+    onKeyPress
 
 }) => {
     return(
@@ -13,6 +14,7 @@ export const InputField = ({
             type={type}
             onChange={onChange}
             className= {style}
+            onKeyPress={onKeyPress}
         />
     )
 };

@@ -40,6 +40,25 @@ export default (state = initialState, action) => {
                 ...state,
                 commentsForSelectedChannel: action.payload
             };
+        case constants.USER_COMMENTED:
+            // var addedComment;
+            // if (state.commentsForSelectedChannel.length > 0){
+            //     addedComment = state.commentsForSelectedChannel[0];
+            //     addedComment.text = action.payload;
+            // }
+            // else {
+            //     addedComment = {
+            //         text:action.payload
+            //     };
+            // }
+            // var newComments = state.commentsForSelectedChannel.push(addedComment);
+            // return {
+            //     ...state,
+            //     commentsForSelectedChannel:newComments
+            // };
+            return state;
+        case constants.INCOMING_COMMENT:
+            return state;
         default:
             return state
     }

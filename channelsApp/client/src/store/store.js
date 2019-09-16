@@ -28,8 +28,9 @@ const store = createStore(
     applyMiddleware(
         thunk
     )
+
 );
-init();
+
 // init(store);
 
 export default store;
