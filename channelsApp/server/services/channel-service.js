@@ -34,7 +34,7 @@ class ChannelService {
                 user, channel, admin, active
             });
             var newChannelMapper = await channelMapper.save();
-            return newChannelMapper.channel;
+            return newChannelMapper;
 
         } catch (e) {
 
@@ -78,16 +78,17 @@ class ChannelService {
             var userService = new UserService();
             var user = await userService.getUserByName({userName});
             var channelList = await ChannelMapper.find({
-                user:{ $ne:user._id},
-                active:true
+                user:user._id
             });
-            var channelListWithDetails = await Promise.all(channelList.map((channelMapper) => {
-                return Channel.find({
-                    '_id':channelMapper.channel
-                });
-            }));
-            var cleanedChannelList = channelListWithDetails.map((updatedChannelList) => updatedChannelList[0]);
-            return  cleanedChannelList;
+            var channelListIds = channelList.map(channelList => channelList.channel.toString());
+            var allChannels = await this.getChannels();
+            var allChannelsNotJoined = [];
+            allChannels.forEach((allChannel) => {
+                if (!channelListIds.includes(allChannel._id.toString())){
+                    allChannelsNotJoined.push(allChannel);
+                }
+            })
+            return  allChannelsNotJoined;
         }catch (e) {
 
         }

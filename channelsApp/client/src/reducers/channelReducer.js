@@ -21,7 +21,7 @@ const mapChannelsStatusToRead =  (channelsList) => {
 };
 
 const addRecievedCommentFromUser = (channelsList, channelName, commentText) => {
-    var newChannelsList = Object.assign({}, channelsList);
+    var newChannelsList = channelsList.slice();
     return newChannelsList.map(channel => {
         if (channel.name === channelName){
             return {
@@ -31,6 +31,7 @@ const addRecievedCommentFromUser = (channelsList, channelName, commentText) => {
                 unreadText: commentText
             }
         }
+        return channel;
     })
 }
 

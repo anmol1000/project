@@ -66,12 +66,16 @@ class Home extends Component {
         console.log("This.props", this.props);
         const userChannels = channel.joinedChannels.map((joinedChannel) => {
             var styleName = "channelBox";
-            if (joinedChannel.name === channel.selectedChannel.name){
+            if (joinedChannel && joinedChannel.name === channel.selectedChannel.name){
                 styleName = "channelBoxSelected"
+            }
+            if (joinedChannel.isUnread){
+                styleName = "channelBoxUnread"
             }
             return(
                 <div onClick={this.selectChannel.bind(this, joinedChannel)} className={styleName}>
                     {joinedChannel.name}
+
                 </div>
             );
         });

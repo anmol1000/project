@@ -52,6 +52,15 @@ html, body {
     border-radius: 5px;
 }
 
+.channelBoxUnread {
+    padding: 20px;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: #09ff7e;
+    border-radius: 5px;
+    background-color:yellow;
+}
+
 .commentContainer {
     display: flex;
     flex-direction:column;

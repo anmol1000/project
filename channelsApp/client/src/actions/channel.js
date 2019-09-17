@@ -98,7 +98,7 @@ export function postJoinChannel({userName, channelName}) {
             .then((response) => response.json()).then(data => {
                 dispatch({
                     type:actionTypes.USER_JOINED_CHANNEL_SUCCESS,
-                    payload:data.channel
+                    payload:data.channel.channel
                 })
             })
             .catch((e) => console.log(e));
