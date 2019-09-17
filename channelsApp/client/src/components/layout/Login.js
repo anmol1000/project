@@ -4,6 +4,7 @@ import {InputField} from "../containers/Input";
 import { loginUser, loginUserSuccess, loginUserFailure } from '../../actions/login';
 import {connect} from "react-redux";
 import { withRouter } from "react-router-dom";
+import Dialog from 'react-dialog'
 import './styles/Login.css'
 
 class Login extends Component {
@@ -11,7 +12,8 @@ class Login extends Component {
         super(props);
         this.state = {
             loginUser:'',
-            loginPassword:''
+            loginPassword:'',
+            isSignUpDialogOpen: false
         }
     }
 
@@ -50,7 +52,17 @@ class Login extends Component {
                         onClick = {this.validateAndLoginUser.bind(this)}
                     />
                 </div>
+                { this.state.isSignUpDialogOpen &&
+
+                    <div className="signUpContainer">
+                        <Dialog>
+
+                        </Dialog>
+                    </div>
+                }
             </div>
+
+
         );
 
     }

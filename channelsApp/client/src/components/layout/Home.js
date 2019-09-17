@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { InputField } from "../containers/Input";
 import {connect} from "react-redux";
 import { withRouter } from "react-router-dom";
-import {channelSelectedOnClick, fetchJoinedChannels, userCommented} from '../../actions/channel';
+import {channelSelectedOnClick, fetchJoinedChannels, userCommented, fetchUnjoinedChannels} from '../../actions/channel';
 import './styles/Home.css'
 
 class Home extends Component {
@@ -16,17 +16,23 @@ class Home extends Component {
     UNSAFE_componentWillMount(){
         this.props.dispatch(fetchJoinedChannels(this.props.login.loggedInUser))
     }
+
     selectChannel(selectedChannel) {
         this.props.dispatch(channelSelectedOnClick(selectedChannel))
     }
-    userAddedComment(){
+
+    userAddedComment() {
         var commentText = this.state.commentText;
-        this.setState({ commentText:'' }, () => {
+        this.setState({ commentText:"" }, () => {
             this.props.dispatch(
                 userCommented(commentText, this.props.channel.selectedChannel, this.props.login.loggedInUser));
         });
-
     }
+
+    joinChannel() {
+        this.props.dispatch(fetchUnjoinedChannels(this.props.login.loggedInUser));
+    }
+
     render() {
         const { login, channel } = this.props;
         const userChannels = channel.joinedChannels.map((joinedChannel) => {
@@ -46,8 +52,13 @@ class Home extends Component {
         return (
             <div className="channelBody">
                 <div className="channelContainer">
-                    <div className="channelLabel">
-                        Joined Channels
+                    <div className="channelLabelContainer">
+                        <div className="channelLabel">
+                            Channels
+                        </div>
+                        <div className="joinChannelLabel" onClick={this.joinChannel.bind(this)}>
+                            Join Channel
+                        </div>
                     </div>
                     <div className="channelListContainer">
                         {userChannels}

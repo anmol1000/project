@@ -32,6 +32,24 @@ export function fetchJoinedChannels(user) {
     }
 }
 
+export function fetchUnjoinedChannels(user) {
+    var userName = user.username;
+    return dispatch => {
+        return fetch(`${ROOT_URL}/channel/notUser/${userName}`, {
+            method: 'GET',
+            mode: 'cors'
+        })
+            .then((response) => response.json()).then(data => {
+                if (data.channels) {
+                    dispatch(fetchJoinedChannelsSuccess(data.channels))
+                } else {
+                    throw Error(data.statusText);
+                }
+            })
+            .catch((e) => console.log(e));
+    }
+}
+
 export function channelSelectedOnClick(selectedChannel) {
     return dispatch => {
         dispatch({

@@ -8,9 +8,9 @@ export const init = (dispatch,userId) => {
         console.log("The connection has been opened");
     };
     ws.onmessage = function incoming(data) {
-        console.log("Data recieved is", data);
-        dispatch({type: actionTypes.INCOMING_COMMENT, data});
+
+        dispatch({type: actionTypes.INCOMING_COMMENT, payload: data});
     };
 };
 
-export const emit = (payload) => ws.send( payload );
+export const emit = (payload) => ws.send( JSON.stringify(payload));

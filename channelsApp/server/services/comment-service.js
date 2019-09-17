@@ -46,18 +46,32 @@ class CommentService {
         }
     }
 
-    async clientCommented ({channelName}) {
+    async clientCommented ({channelName, userName, commentText}) {
         var channelService = new ChannelService();
+        var userService = new UserService();
         var channel = await  channelService.getChannelByName({channelName});
         var channelList = await ChannelMapper.find({
             channel
         });
-        //get All the users in the channel;
-        var usersInChannel = channelList
+        var usersInChannelList = await Promise.all (channelList.map( channel => {
+            var userId = channel.user;
+            return userService.getUserById({userId}, function (userList) {
+                return userList;
+            });
+        }));
+
+        await this.addComment({userName, channelName, commentText});
+
+        var userNamesInChannelList = usersInChannelList.map(userInChannelList => userInChannelList.username);
         connectedWebSocketUsers.forEach((data) => {
             // Intersection of users in channel and user in Websocket client;
             var username = Object.keys(data)[0];
-            data[username].send("This is the test");
+            if (userNamesInChannelList.includes(username) && username != userName){
+                data[username].send(JSON.stringify({
+                    channelName,
+                    commentText
+                }));
+            }
         });
     }
 }

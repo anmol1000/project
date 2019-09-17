@@ -31,6 +31,11 @@ html, body {
     color: #6d8068;
 }
 
+.channelLabelContainer {
+    display: flex;
+    flex-direction:row;
+}
+
 .channelBox {
     padding: 20px;
     border-style: solid;
@@ -54,7 +59,7 @@ html, body {
 
 .commentLabel {
     height: 100px;
-    width:1500px;
+    width:1000px;
     background-color: #0fffa5;
     border-style: solid;
     border-width:1px;
@@ -68,4 +73,18 @@ html, body {
     border-width: 1px;
     border-color: #39c2f1;
     border-radius: 5px;
+}
+
+.joinChannelLabel {
+    margin-top:10px;
+    margin-left:100px;
+    margin-left:100px;
+    width:100px;
+    height:30px;
+    padding:5px;
+    background-color: #ff171f;
+    border-style: solid;
+    border-width:1px;
+    border-color: #ffc01f;
+    border-radius:5px;
 }

@@ -11,10 +11,25 @@ const mapChannelsStatusToRead =  (channelsList) => {
         return channel = {
             ...channel,
             isUnread: false,
-            unreadCount: 0
+            unreadCount: 0,
+            unreadText:''
         }
     });
 };
+
+const addRecievedCommentFromUser = (channelsList, channelName, commentText) => {
+    var newChannelsList = Object.assign({}, channelsList);
+    return newChannelsList.map(channel => {
+        if (channel.name === channelName){
+            return {
+                ...channel,
+                isUnreadTrue: true,
+                unreadCount: (channel.unreadCount)++,
+                unreadText: commentText
+            }
+        }
+    })
+}
 
 export default (state = initialState, action) => {
 
@@ -41,24 +56,53 @@ export default (state = initialState, action) => {
                 commentsForSelectedChannel: action.payload
             };
         case constants.USER_COMMENTED:
-            // var addedComment;
-            // if (state.commentsForSelectedChannel.length > 0){
-            //     addedComment = state.commentsForSelectedChannel[0];
-            //     addedComment.text = action.payload;
-            // }
-            // else {
-            //     addedComment = {
-            //         text:action.payload
-            //     };
-            // }
-            // var newComments = state.commentsForSelectedChannel.push(addedComment);
-            // return {
-            //     ...state,
-            //     commentsForSelectedChannel:newComments
-            // };
+            var addedComment;
+            if (state.commentsForSelectedChannel.length > 0){
+                addedComment = Object.assign({}, state.commentsForSelectedChannel[0]);
+                addedComment.text = action.payload;
+            }
+            else {
+                addedComment = {
+                    text:action.payload
+                };
+            }
+            var newComments = state.commentsForSelectedChannel.slice();
+            newComments.push(addedComment);
+            return {
+                ...state,
+                commentsForSelectedChannel:newComments
+            };
             return state;
         case constants.INCOMING_COMMENT:
-            return state;
+
+            var payload = JSON.parse(action.payload.data);
+            var channelName = payload.channelName;
+            var commentText = payload.commentText;
+            if (state.selectedChannel.name === channelName){
+                if (state.commentsForSelectedChannel.length > 0){
+                    addedComment = Object.assign({}, state.commentsForSelectedChannel[0]);
+                    addedComment.text = commentText;
+                }
+                else {
+                    addedComment = {
+                        text:commentText
+                    };
+                }
+                var newComments = state.commentsForSelectedChannel.slice();
+                newComments.push(addedComment);
+                return {
+                    ...state,
+                    commentsForSelectedChannel:newComments
+                };
+
+            } else {
+                var updatedJoinedChannels = addRecievedCommentFromUser(state.joinedChannels, channelName, commentText);
+                return {
+                    ...state,
+                    joinedChannels: updatedJoinedChannels,
+                    selectedChannel: updatedJoinedChannels[0]
+                };
+            }
         default:
             return state
     }

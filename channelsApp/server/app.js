@@ -92,12 +92,18 @@ const wss = new WebSocket.Server({ server });
 wss.on('connection', (ws, req) => {
     var url = req.url;
     var userName = url.substring(11, url.length);
-    connectedWebSocketUsers.push({
-        userName:ws
-    });
+    console.log("Username on conection is", userName);
+    var socketJson = {};
+    socketJson[userName] = ws;
+    connectedWebSocketUsers.push(socketJson);
 
-    ws.on('message', (message) => {
+    ws.on('message', async (message) => {
+        var commentMessage = JSON.parse(message);
         var commentService = new CommentService();
+        var channelName = commentMessage.channelName;
+        var commentText = commentMessage.commentText;
+        var userName = commentMessage.userName;
+        var result = await commentService.clientCommented({channelName, commentText, userName})
 
     });
     ws.on('close', function () {
