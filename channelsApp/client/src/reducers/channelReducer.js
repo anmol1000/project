@@ -2,8 +2,11 @@ import constants from '../constants/actionTypes'
 
 var initialState = {
     joinedChannels: [],
+    unjoinedChannels:[],
     selectedChannel: null,
-    commentsForSelectedChannel: []
+    commentsForSelectedChannel: [],
+    openJoinChannelDialog: false,
+    openCreateChannelDialog: false
 };
 
 const mapChannelsStatusToRead =  (channelsList) => {
@@ -103,6 +106,50 @@ export default (state = initialState, action) => {
                     selectedChannel: updatedJoinedChannels[0]
                 };
             }
+            return state;
+
+        case constants.SHOW_JOIN_CHANNELS_DIALOG :
+            var unjoinedChannelsList = action.payload.slice();
+            return {
+                ...state,
+                unjoinedChannels: unjoinedChannelsList,
+                openJoinChannelDialog:true
+            };
+
+        case constants.HIDE_JOIN_CHANNELS_DIALOG :
+            return {
+                ...state,
+                openJoinChannelDialog:false
+            };
+
+        case constants.SHOW_ADD_CHANNEL_DIALOG :
+            return {
+                ...state,
+                openCreateChannelDialog:true
+            };
+        case constants.HIDE_ADD_CHANNEL_DIALOG :
+            return {
+                ...state,
+                openCreateChannelDialog:false
+            };
+
+        case constants.ADD_CHANNEL_DIALOG_SUCCESS:
+            var newJoinedChannels = state.joinedChannels.slice();
+            newJoinedChannels.push(action.payload);
+            return {
+                ...state,
+                joinedChannels:newJoinedChannels,
+                openCreateChannelDialog:false
+            };
+
+        case constants.USER_JOINED_CHANNEL_SUCCESS:
+            var newJoinedChannels = state.joinedChannels.slice();
+            newJoinedChannels.push(action.payload);
+            return {
+                ...state,
+                joinedChannels:newJoinedChannels,
+                openJoinChannelDialog: false
+            };
         default:
             return state
     }

@@ -5,7 +5,8 @@ export const InputField = ({
     type = "text",
     onChange,
     style = '',
-    onKeyPress
+    onKeyPress,
+    value
 
 }) => {
     return(
@@ -15,6 +16,7 @@ export const InputField = ({
             onChange={onChange}
             className= {style}
             onKeyPress={onKeyPress}
+            value={value}
         />
     )
 };

@@ -47,8 +47,8 @@ html, body {
 .channelBoxSelected {
     padding: 20px;
     border-style: solid;
-    border-width: 1px;
-    border-color: white;
+    border-width: 5px;
+    border-color: #09ff7e;
     border-radius: 5px;
 }
 
@@ -78,7 +78,7 @@ html, body {
 .joinChannelLabel {
     margin-top:10px;
     margin-left:100px;
-    margin-left:100px;
+    margin-left:30px;
     width:100px;
     height:30px;
     padding:5px;

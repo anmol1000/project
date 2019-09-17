@@ -8,6 +8,20 @@ export function fetchJoinedChannelsSuccess(channelsList) {
         payload: channelsList
     };
 }
+export function fetchUnJoinedChannelsSuccess(channelsList) {
+    return {
+        type: actionTypes.SHOW_JOIN_CHANNELS_DIALOG,
+        payload: channelsList
+    }
+}
+
+export function fetchAddChannelSuccess(channel){
+    return {
+        type:actionTypes.ADD_CHANNEL_DIALOG_SUCCESS,
+        payload: channel
+    }
+
+}
 export function fetchCommentsSuccess(commentsList) {
     return {
         type: actionTypes.GET_COMMENTS_SUCCESS,
@@ -16,8 +30,9 @@ export function fetchCommentsSuccess(commentsList) {
 }
 
 export function fetchJoinedChannels(user) {
+    var userName = user.username;
     return dispatch => {
-        return fetch(`${ROOT_URL}/channel`, {
+        return fetch(`${ROOT_URL}/channel/user/${userName}`, {
             method: 'GET',
             mode: 'cors'
         })
@@ -41,10 +56,50 @@ export function fetchUnjoinedChannels(user) {
         })
             .then((response) => response.json()).then(data => {
                 if (data.channels) {
-                    dispatch(fetchJoinedChannelsSuccess(data.channels))
+                    dispatch(fetchUnJoinedChannelsSuccess(data.channels))
                 } else {
                     throw Error(data.statusText);
                 }
+            })
+            .catch((e) => console.log(e));
+    }
+}
+
+export function fetchAddChannel(user, channelName) {
+    var userName = user.username;
+    return dispatch => {
+        return fetch(`${ROOT_URL}/channel/userChannel`, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({userName, channelName}),
+            mode: 'cors'
+        })
+            .then((response) => response.json()).then(data => {
+                dispatch(fetchAddChannelSuccess(data.channel))
+            })
+            .catch((e) => console.log(e));
+    }
+}
+
+export function postJoinChannel({userName, channelName}) {
+    return dispatch => {
+        return fetch(`${ROOT_URL}/channel/join`, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({userName, channelName}),
+            mode: 'cors'
+        })
+            .then((response) => response.json()).then(data => {
+                dispatch({
+                    type:actionTypes.USER_JOINED_CHANNEL_SUCCESS,
+                    payload:data.channel
+                })
             })
             .catch((e) => console.log(e));
     }

@@ -2,14 +2,25 @@ import React, {Component} from 'react';
 import { InputField } from "../containers/Input";
 import {connect} from "react-redux";
 import { withRouter } from "react-router-dom";
-import {channelSelectedOnClick, fetchJoinedChannels, userCommented, fetchUnjoinedChannels} from '../../actions/channel';
+import Modal from 'react-modal';
+import {
+    channelSelectedOnClick,
+    fetchJoinedChannels,
+    userCommented,
+    fetchUnjoinedChannels,
+    fetchAddChannel,
+    postJoinChannel
+} from '../../actions/channel';
 import './styles/Home.css'
+import {Button} from "../containers/Button";
+import actionTypes from "../../constants/actionTypes";
 
 class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            commentText:''
+            commentText:'',
+            channelName:''
         }
     }
 
@@ -19,6 +30,19 @@ class Home extends Component {
 
     selectChannel(selectedChannel) {
         this.props.dispatch(channelSelectedOnClick(selectedChannel))
+    }
+
+    joinChannelOnClick(selectedChannel){
+        this.props.dispatch(postJoinChannel({
+            userName: this.props.login.loggedInUser.username,
+            channelName: selectedChannel.name
+        }))
+
+    }
+    showAddChannelDialog(){
+        this.props.dispatch({
+            type:actionTypes.SHOW_ADD_CHANNEL_DIALOG
+        })
     }
 
     userAddedComment() {
@@ -33,12 +57,28 @@ class Home extends Component {
         this.props.dispatch(fetchUnjoinedChannels(this.props.login.loggedInUser));
     }
 
+    addChannel(channelName) {
+        this.props.dispatch(fetchAddChannel(this.props.login.loggedInUser, channelName));
+    }
+
     render() {
         const { login, channel } = this.props;
+        console.log("This.props", this.props);
         const userChannels = channel.joinedChannels.map((joinedChannel) => {
+            var styleName = "channelBox";
+            if (joinedChannel.name === channel.selectedChannel.name){
+                styleName = "channelBoxSelected"
+            }
             return(
-                <div onClick={this.selectChannel.bind(this, joinedChannel)} className="channelBox">
+                <div onClick={this.selectChannel.bind(this, joinedChannel)} className={styleName}>
                     {joinedChannel.name}
+                </div>
+            );
+        });
+        const notJoinedUserChannels = channel.unjoinedChannels.map((unjoinedChannel) => {
+            return(
+                <div onClick={this.joinChannelOnClick.bind(this, unjoinedChannel)} className="channelBox">
+                    {unjoinedChannel.name}
                 </div>
             );
         });
@@ -59,6 +99,39 @@ class Home extends Component {
                         <div className="joinChannelLabel" onClick={this.joinChannel.bind(this)}>
                             Join Channel
                         </div>
+                        <div className="joinChannelLabel" onClick={this.showAddChannelDialog.bind(this)}>
+                            Add Channel
+                        </div>
+                        { this.props.channel.openCreateChannelDialog &&
+                            <div className="addChannelContainer">
+                                <Modal
+                                    isOpen={ this.props.channel.openCreateChannelDialog}
+                                    className="signUpModal"
+                                >
+                                    <InputField
+                                        placeholder={"Channel Name"}
+                                        onChange = { (event) => {
+                                            this.setState({
+                                                channelName: event.target.value
+                                            })
+                                        }}
+                                        style="username"
+                                    />
+
+                                    <Button
+                                        btnText={"Add Channel"}
+                                        onClick = {this.addChannel.bind(this, this.state.channelName)}
+                                    />
+                                </Modal>
+                            </div>
+                        }
+                        { this.props.channel.openJoinChannelDialog &&
+                            <Modal
+                                isOpen={ this.props.channel.openJoinChannelDialog}
+                                className="signUpModal">
+                                {notJoinedUserChannels}
+                            </Modal>
+                        }
                     </div>
                     <div className="channelListContainer">
                         {userChannels}
@@ -86,9 +159,9 @@ class Home extends Component {
                                 this.userAddedComment();
                             }
                         }}
+                        value={this.state.commentText}
                         style="username"
                     />
-
                 </div>
             </div>
         );

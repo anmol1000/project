@@ -12,9 +12,31 @@ router.post('/', async function(req, res, next) {
         channelType:payload.type
     };
     var response = await channelService.addChannel(options);
-    res.send("Channel successfully added");
+    console.log("Add channel Response is", response);
+    res.send({
+        message:"Channel successfully added"
+    });
 
 });
+
+//API for creating and joining a channel
+router.post('/userChannel', async function(req, res, next) {
+    var channelService= new ChannelService();
+    var payload = req.body;
+    var options = {
+        channelName:payload.channelName,
+        userName:payload.userName,
+        channelType:'PUBLIC'
+    };
+    var response = await channelService.addChannel(options);
+    var response2 = await channelService.joinChannelForUser(options);
+    console.log("Add channel Response is", response);
+    res.send({
+        channel:response2.channel
+    });
+
+});
+
 
 // API for joining a channel
 
@@ -28,7 +50,10 @@ router.post('/join', async function (req, res, next) {
             userName : payload.userName
         };
         var addChannel = await channelService.joinChannelForUser(options);
-        res.send(addChannel);
+        console.log("Adding Channel is", addChannel);
+        res.send({
+            channel:addChannel
+        });
     }catch (e) {
 
     }
@@ -70,6 +95,7 @@ router.get('/user/:userName', async function (req, res, next) {
 
 });
 
+// This API is used to get all the channels not joined by a particular user.
 router.get('/notUser/:userName', async function (req, res, next) {
     try{
         var channelService = new ChannelService();

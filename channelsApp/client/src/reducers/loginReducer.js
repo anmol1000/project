@@ -2,13 +2,29 @@ import constants from '../constants/actionTypes'
 
 var initialState = {
     loggedInUser: null,
-    isUserLoggedIn: false
+    isUserLoggedIn: false,
+    showSignUpPage: false
 };
 
 export default (state = initialState, action) => {
 
     switch(action.type) {
+        case constants.SIGNUP_USER_SUCCESS:
+            return {
+                ...state,
+                showSignUpPage: false
+            };
+        case constants.SIGNUP_USER_SHOW_DIALOG:
+            return {
+                ...state,
+                showSignUpPage: true
+            };
 
+        case constants.SIGNUP_USER_HIDE_DIALOG:
+            return {
+                ...state,
+                showSignUpPage: false
+            };
         case constants.LOGIN_USER_SUCCESS:
             return {
                 ...state,

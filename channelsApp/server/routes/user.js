@@ -3,15 +3,22 @@ var router = express.Router();
 var UserService = require('../services/user-service');
 
 router.post('/', async function(req, res, next) {
-    var userService= new UserService();
-    var payload = req.body;
-    var options = {
-        userName:payload.name,
-        userPassword:payload.password
-    };
-    console.log(req);
-    var response = await userService.addUser(options);
-    res.send("User successfully added");
+    try{
+        var userService= new UserService();
+        var payload = req.body;
+        var options = {
+            userName:payload.name,
+            userPassword:payload.password
+        };
+        console.log(req);
+        var response = await userService.addUser(options);
+        res.send({
+            message:"User successfully added",
+        });
+    }catch (error) {
+
+    }
+
 
 });
 
